@@ -1,42 +1,47 @@
 #container {
     /* not working */
-    background-image: url(assets/images/PageBackground.jpg);
+    background-image: url(/assets/images/PageBackground.jpg);
 }
 
 #gameName {
     width: 20%;
-    height: 80px;
+    height: 100px;
     background-color: brown;
     color: white;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 #instructions {
     width: 30%;
-    height: 250px; 
-    background-color: rgb(189, 185, 185);
+    height: 300px; 
+    background-color: gray;
     color: green;
     line-height: 1.6%;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 #randomNo {
-    width: 15%;
-    height: 80px;
     background-color: rgb(40, 245, 125);
     color: purple;
-    font-size: xx-large;
-    padding-top: 5px;
     float: left;
 }
 
+/* #randomNo {
+    width: 15%;
+    height: 100px;
+    background-color: rgb(40, 245, 125);
+    color: purple;
+    padding-top: 10px;
+    font-size: xx-large;
+    padding-top: 5px;
+    float: left;
+} */
+
 #scoresWinLose {
-    width: 5%;
-    height: 80px;
     background-color: aqua;
     color: purple;
-    padding-top: 5px;
+    padding-top: 10px;
     float: left;
 }
 
@@ -44,20 +49,22 @@
     clear: both;
 }
 
-#totalLabel {
-    width: 15%;
+#totalLabel, #ScoreTotal {
     background-color: rgb(12, 121, 103);
     color: white;
-    border-style: none;
 }
 
-#scoreTotal{
+/* #ScoreTotal {
+    
+} */
+
+#randomNo, #ScoreTotal {
     width: 15%;
-    height: 80px;
+    height: 100px;
+    padding-top: 10px;
     font-size: xx-large;
     padding-top: 5px;
-    background-color: rgb(12, 121, 103);
-    color: white;
+    float: left;
 }
 
 div {
