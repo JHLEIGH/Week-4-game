@@ -1,7 +1,6 @@
-#container {
-    /* not working */
-    background-image: url(assets/images/PageBackground.jpg);
-}
+/* #container {
+    background: url("assets/images/PageBackground.jpg");
+} */
 
 #gameName {
     width: 20%;

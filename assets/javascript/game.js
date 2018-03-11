@@ -8,47 +8,41 @@ $(document).ready(function () {
         targetNo,
         blueNo,
         greenNo,
-        RedNo,
-        YellowNo;
+        redNo,
+        yellowNo;
     
     initialize_game();
-    // console.log("TargetNo: "+targetNo );
-    // console.log("Blue #: "+blueNo );
-    // console.log("Green #: "+greenNo );
-    // console.log("Red #: "+RedNo );
-    // console.log("Yellow #: "+YellowNo );
 
     $("#redGem").click(function () {
         calc_print(redNo);
-        alert("Red Gem: " + );
     });
 
     $("#blueGem").click(function () {
-        alert("Blue Gem: ");
+        calc_print(blueNo);
     });
 
     $("#greenGem").click(function () {
-        alert("Green Gem: ");
+        calc_print(greenNo);
     });
 
     $("#yellowGem").click(function () {
-        alert("Yellow Gem: ");
+        calc_print(yellowNo);
     });
 
     function initialize_game(){
         newGame = false;
         score = 0;
         totScore = 0;
-        targetNo = Math.floor(Math.random() * 101 ), 19;
-        blueNo = Math.floor(Math.random() * 11 ), 1;
-        greenNo = Math.floor(Math.random() * 11 ), 1;
-        redNo = Math.floor(Math.random() * 11 ), 1;
-        yellowNo = Math.floor(Math.random() * 11 ), 1;
+        targetNo = Math.floor(Math.random() * 102 ) + 19;
+        blueNo = Math.floor(Math.random() * 12 ) + 1;
+        greenNo = Math.floor(Math.random() * 12 ) + 1;
+        redNo = Math.floor(Math.random() * 12 ) + 1;
+        yellowNo = Math.floor(Math.random() * 12 ) + 1;
         $("#randomNo").html(targetNo);
         $("#lossesScore").html("Losses: " + losses);
         $("#winsScore").html("Wins: " + wins);
         $("#scoreTotal").html(totScore);
-    }
+    };
 
     function calc_print(score) {
 
@@ -64,14 +58,16 @@ $(document).ready(function () {
                 newGame = true;
             }
             else {
-                totScore = totalScore + score;
+                totScore = totScore + score;
+                $("#scoreTotal").html(totScore);
             }
         }
 
         if (newGame === true) {
-            
+            initialize_game();
         }
 
-    }
+    };
+    
 });
   
