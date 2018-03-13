@@ -1,6 +1,6 @@
-/* #container {
-    background: url("assets/images/PageBackground.jpg");
-} */
+body {
+    background-image: url("assets/images/PageBackground2.png");
+}
 
 #gameName {
     width: 20%;
