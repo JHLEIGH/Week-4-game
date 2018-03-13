@@ -1,5 +1,7 @@
 body {
-    background-image: url("assets/images/BackgroundImage.png");
+    /* background-image: url("../images/BackgroundImage.png"); */
+    background-image: url("../images/PageBackground.jpg");
+
 }
 
 #gameName {
@@ -53,6 +55,10 @@ body {
     background-color: rgb(12, 121, 103);
     color: white;
     border-style: none;
+}
+
+#totLabPara {
+    margin: 0px 0px 0px 0px;
 }
 
 #scoreTotal{
