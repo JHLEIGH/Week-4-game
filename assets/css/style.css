@@ -43,6 +43,11 @@
     clear: both;
 }
 
+#redGem, #blueGem, #greenGem, #yellowGem {
+    height: 45px;
+    width: 45px;
+}
+
 #totalLabel {
     width: 15%;
     background-color: rgb(12, 121, 103);

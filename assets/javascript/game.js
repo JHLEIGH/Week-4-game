@@ -46,6 +46,9 @@ $(document).ready(function () {
 
     function calc_print(score) {
 
+        totScore = totScore + score;
+        $("#scoreTotal").html(totScore);
+
         if (totScore > targetNo) {
             losses++;
             $("#lossesScore").html("Losses: " + losses);
@@ -56,10 +59,6 @@ $(document).ready(function () {
                 wins++;
                 $("#winsScore").html("Wins: " + wins);
                 newGame = true;
-            }
-            else {
-                totScore = totScore + score;
-                $("#scoreTotal").html(totScore);
             }
         }
 
